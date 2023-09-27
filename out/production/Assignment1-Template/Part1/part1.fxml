@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?language javascript?>
+
+<BorderPane xmlns:fx="Part1/part1.fxml" fx:controller="Part1.ButtonFXMLController">
+    <fx:script>
+        function reactToClick(event) {
+            label1.setText("Hello 3035!");
+        }
+    </fx:script>
+    <top>
+        <Button fx:id="button1" text="Say Hello World!" onAction="reactToClick(event);"/>
+    </top>
+    <center>
+        <Label text="Default Message" fx:id="label1" />
+    </center>
+</BorderPane>
